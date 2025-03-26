@@ -1,54 +1,112 @@
-<header>
 
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
+# Linux Lines
+## Installing Stuff:
+Within youre desired terminal, you either install as a super user by adding ```sudo``` or not:
 
-# GitHub Pages
+Some example:
 
-_Create a site or blog from your GitHub repositories with GitHub Pages._
+Arch Linux uses "pacman -S":
 
-</header>
+- ```pacman -S vlc```
 
-<!--
-  <<< Author notes: Step 1 >>>
-  Choose 3-5 steps for your course.
-  The first step is always the hardest, so pick something easy!
-  Link to docs.github.com for further explanations.
-  Encourage users to open new tabs for steps!
--->
+Ubuntu uses "apt=get":
 
-## Step 1: Enable GitHub Pages
+- ``` sudo apt-get istall vlc```
 
-_Welcome to GitHub Pages and Jekyll :tada:!_
+Fedora uses "dnf install":
 
-The first step is to enable GitHub Pages on this [repository](https://docs.github.com/en/get-started/quickstart/github-glossary#repository). When you enable GitHub Pages on a repository, GitHub takes the content that's on the main branch and publishes a website based on its contents.
+- ```sudo dnf install vlc```
 
-### :keyboard: Activity: Enable GitHub Pages
+It is best to search what prefix your distribution uses.
 
-1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab.
-1. Under your repository name, click **Settings**.
-1. Click **Pages** in the **Code and automation** section.
-1. Ensure "Deploy from a branch" is selected from the **Source** drop-down menu, and then select `main` from the **Branch** drop-down menu.
-1. Click the **Save** button.
-1. Wait about _one minute_ then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
-   > Turning on GitHub Pages creates a deployment of your repository. GitHub Actions may take up to a minute to respond while waiting for the deployment. Future steps will be about 20 seconds; this step is slower.
-   > **Note**: In the **Pages** of **Settings**, the **Visit site** button will appear at the top. Click the button to see your GitHub Pages site.
+### Some recommendations:
+- ffmpegthumbnailer (lets you see thumbnails of images and videos)
 
-<footer>
+- openal-soft.i686 (don't remember what it does but it fixed a problem for me so you should install it)
 
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
+- fastfetch (see details about your computer/ run program by typing ```fastfetch``` in terminal)
+
+- cmatrix (gimick to rain numbers in terminal)
+
+- libxcb-cursor-dev (allows anki to run (anki installed from their site))
 
 ---
 
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/github-pages) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
+## Extensions
 
-&copy; 2023 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+### Gnome Desktop Environment:
 
-</footer>
+#### Method 1 (classic way)
+1- within your distro's software app install "gnome-shell extension"
+
+2- Go to [https://extensions.gnome.org/] and install an extension
+
+- make sure to install the right shell version
+
+- shell version could be checked by typing ```fastfetch``` in terminal
+
+- install fastfetch if not installed yet (using the command I just taught you)
+
+3- Extract the zip and place the extension folder in /home/(your user)/.local/share/gnome-shell/extensions
+
+- when file starts with a --> . <-- i'm talking about this dot, this means that it is a hidden file. ```Ctrl + h``` should reveal them.
+
+4- Open the extensions program you installed and tick it on (restart pc if needed, but usually not)
+
+#### Method 2 (modern and more convenient)
+
+1- Download ```Evolve-core``` from the user {arcnations-united}
+
+2- Unzip
+
+3- Run the executable
+
+- you might have to right click --> properties --> run as executable
+
+- install all the required prerequisites
+
+4- Go to the extensions tab on the left
+
+5- Click the bottom right icon and install the extension you want.
+
+6- The gear icon lets you configure more Stuff
+
+---
+
+## Themes
+
+1- Go to [Gnome-look.org]
+
+2- Downlaod the GTK3/4 theme
+
+3- Open that folder and place that singular folder in /home/.Themes
+
+- starts with . thus is hidden
+
+4- Open Evolve program we just installed
+
+5- Click on the theme 
+
+- might take time to show theme in the files app
+
+6- Cursors are placed in /home/.icons/
+
+- if not present, then make Open
+
+- icon packs are also placed here
+
+---
+
+## Finally
+
+[] This is all I have used till now
+[] Will update if I find more solutions and cool tricks
+[] Have a nice day
+
+
+
+
+
+
+
+
